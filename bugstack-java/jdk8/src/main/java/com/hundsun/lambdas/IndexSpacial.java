@@ -12,7 +12,7 @@ import java.util.function.Supplier;
 /**
  * 内置函数式接口
  */
-public class IndexStream {
+public class IndexSpacial {
 
     //1.Predicate断言
     //Predicate 是一个可以指定入参类型，并返回 boolean 值的函数式接口。它内部提供了一些带有默认实现的方法，
@@ -49,10 +49,10 @@ public class IndexStream {
         Supplier<Person> personSupplier = Person::new;
         personSupplier.get();
 
-        Supplier<String> stringSupplier = IndexStream::doSomething;
+        Supplier<String> stringSupplier = IndexSpacial::doSomething;
         stringSupplier.get();
 
-        Supplier<String> stringSupplier1 = new IndexStream()::doSomething1;
+        Supplier<String> stringSupplier1 = new IndexSpacial()::doSomething1;
         stringSupplier.get();
     }
 
